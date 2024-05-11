@@ -1,0 +1,19 @@
+##Utilização de um modelo local via OLLama:
+
+
+1. #Download Ollama
+
+	curl -fsSL https://ollama.com/install.sh | sh
+
+2. #Download any .gguf LLM model from Huggingfaces
+
+	ex: mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf
+
+2. #Create a Modelfile pointing out to the model path:
+   
+	FROM ""./mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf""
+	save and close it
+3. ##Transfer the data from local model to OLlama via:
+	create give-it-a-name -f ModelFile
+	....
+4. ##Its done.
