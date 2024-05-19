@@ -1,7 +1,7 @@
 from crewai import Crew
 
-from tasks import Tasks
-from agents import Agents
+from crew_financial.tasks import Tasks
+from crew_financial.agents import Agents
 from langchain_openai import ChatOpenAI
 import os
 
